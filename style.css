@@ -22,7 +22,7 @@
 
   --exo-medium-32-font-family: "Exo", Helvetica;
   --exo-medium-32-font-weight: 500;
-  --exo-medium-32-font-size: 2em;
+  --exo-medium-32-font-size: 1.7em;
 
   --exo-medium-18-font-family: "Exo", Helvetica;
   --exo-medium-18-font-weight: 500;
@@ -31,70 +31,69 @@
 
 body {
   background-color: black;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  min-height: 100vh;
 }
 
-.landing-page {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  position: relative;
-}
+/* Header */
 
-.hero {
+header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
-  gap: 48px;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100dvw;
-  height: 100dvh;
-  overflow: hidden;
-}
-
-.video-container {
+  align-items: center;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: auto;
-  height: 100dvh;
-  object-fit: cover;
-  opacity: 0.5;
-  z-index: -1;
-}
-
-.header {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 0 100px;
   width: 100%;
+  padding: 10px 20px;
   color: var(--text);
 }
 
-.top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.logo,
+.action {
+  z-index: 100;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(5px);
+  z-index: 10;
   display: flex;
-  align-items: center;
   justify-content: center;
-  position: sticky;
-  top: 12px;
+  width: 100%;
+  gap: 10px;
+  padding: 40px 20px;
   color: var(--text);
-  background-color: red;
-  gap: 24px;
 }
 
 .nav-item {
   font-family: var(--exo-medium-32-font-family);
   font-size: var(--exo-medium-32-font-size);
   font-weight: var(--exo-medium-18-font-weight);
+}
+
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 48px;
+  height: 100dvh;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100dvh;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+  border: red 1px solid;
 }
 
 .slogan {
