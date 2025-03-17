@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-
     <video
       autoplay
       loop
@@ -16,37 +15,33 @@
     ></video>
 
     <div class="landing-page">
+      <div class="top">
+        <img class="logo" src="./images/Logo.png" alt="logo" />
 
-      <header>
-        <div class="logo">
-          <img src="./images/Logo.png" alt="logo" />
-        </div>
-  
         <div class="action">
           <button onclick="window.location.href='./landing-page.html'">
             Sign in
           </button>
         </div>
-      </header>
+      </div>
 
-        
-    <div class="navbar">
-      <div class="nav-item">Turneringer</div>
-      <div class="nav-item">Nyhed</div>
-      <div class="nav-item">Forum</div>
-      <div class="nav-item">Find Makker</div>
-      <div class="nav-item">Venner</div>
-      <div class="nav-item">Om</div>
-    </div>
+      <div class="navbar">
+        <div class="nav-item">Turneringer</div>
+        <div class="nav-item">Nyhed</div>
+        <div class="nav-item">Forum</div>
+        <div class="nav-item">Find Makker</div>
+        <div class="nav-item">Venner</div>
+        <div class="nav-item">Om</div>
+      </div>
 
-  
       <div class="hero">
         <div class="slogan">
-          <p class="velkommen-til">
+          <p>
             Velkommen til SpilVerden:
             <br />
             Dit fællesskab for sjov og spil!
           </p>
+
           <div>
             <button class="cta-btn">
               <div>Learn more</div>
@@ -56,9 +51,10 @@
       </div>
 
       <div class="galleri-autoplay"></div>
+
       <div class="content">
         <div class="content-card">
-          <div class="paragraph-title">
+          <div class="card-title">
             Velkommen til SpilVerden - Dit Gamingfællesskab
           </div>
           <p>
@@ -69,7 +65,7 @@
           </p>
         </div>
         <div class="content-card">
-          <div class="paragraph-title">Hold dig opdateret</div>
+          <div class="card-title">Hold dig opdateret</div>
           <p>
             Vil du altid være blandt de første til at høre om nye opdateringer,
             spiludgivelser og e-sportsturneringer? Vores nyhedssektion dækker
@@ -78,7 +74,7 @@
           </p>
         </div>
         <div class="content-card">
-          <div class="paragraph-title">Turneringer for alle niveauer</div>
+          <div class="card-title">Turneringer for alle niveauer</div>
           <p>
             Uanset om du spiller for sjov eller drømmer om at blive en
             professionel e-sportsudøver, har vi turneringer, der passer til dig.
@@ -87,7 +83,7 @@
           </p>
         </div>
         <div class="content-card">
-          <div class="paragraph-title">
+          <div class="card-title">
             <p>Forum – Del din passion</p>
           </div>
           <p>
@@ -97,7 +93,7 @@
           </p>
         </div>
         <div class="content-card">
-          <div class="paragraph-title">
+          <div class="card-title">
             <p>Find venner og modstandere</p>
           </div>
           <p>
@@ -108,7 +104,7 @@
           </p>
         </div>
         <div class="content-card">
-          <div class="paragraph-title">
+          <div class="card-title">
             <p>Bliv en del af fællesskabet</p>
           </div>
           <p>
@@ -118,72 +114,83 @@
           </p>
         </div>
       </div>
-      <div class="footer">
-        <div class="menu-footer">
-          <div class="logo-2"></div>
-          <div class="frame-6">
-            <div class="frame-7">
-              <div class="text-wrapper-3">Turneringer</div>
-              <div class="group">
-                <div class="text-wrapper-4">Tilmeld</div>
-                <div class="text-wrapper-5">Tidligere Turneringer</div>
-                <div class="text-wrapper-6">Kalender</div>
+
+      <footer>
+        <div class="footer-top">
+          <div class="lg-logo">
+            <img src="./images/Logo.png" alt="large logo" />
+          </div>
+          <div class="menu-container">
+            <div class="menu">
+              <div class="menu-title">Turneringer</div>
+              <div class="menu-items-container">
+                <div class="menu-item">Tilmeld</div>
+                <div class="menu-item">Tidligere Turneringer</div>
+                <div class="menu-item">Kalender</div>
               </div>
             </div>
-            <div class="frame-8">
-              <div class="text-wrapper-3">Nyhed</div>
-              <div class="group-2">
-                <div class="text-wrapper-4">Spil</div>
-                <div class="text-wrapper-5">International</div>
-                <div class="text-wrapper-6">Favorite Spil</div>
+            <div class="menu">
+              <div class="menu-title">Nyhed</div>
+              <div class="menu-items-container">
+                <div class="menu-item">Spil</div>
+                <div class="menu-item">International</div>
+                <div class="menu-item">Favorite Spil</div>
               </div>
             </div>
-            <div class="frame-8">
-              <div class="text-wrapper-3">Forrum</div>
-              <div class="group-3">
-                <div class="text-wrapper-4">Opslage</div>
-                <div class="text-wrapper-5">Fælleskabe</div>
-                <div class="text-wrapper-6">Q,A</div>
+            <div class="menu">
+              <div class="menu-title">Forrum</div>
+              <div class="menu-items-container">
+                <div class="menu-item">Opslage</div>
+                <div class="menu-item">Fælleskabe</div>
+                <div class="menu-item">Q,A</div>
               </div>
             </div>
-            <div class="frame-8">
-              <div class="text-wrapper-3">Find en makker</div>
-              <div class="group-4">
-                <div class="text-wrapper-4">Venneanmodning</div>
+            <div class="menu">
+              <div class="menu-title">Find en makker</div>
+              <div class="menu-items-container">
+                <div class="menu-item">Venneanmodning</div>
               </div>
             </div>
-            <div class="frame-9">
-              <div class="text-wrapper-3">Venner</div>
-              <div class="group-5">
-                <div class="text-wrapper-4">Venneliste</div>
+            <div class="menu">
+              <div class="menu-title">Venner</div>
+              <div class="menu-items-container">
+                <div class="menu-item">Venneliste</div>
               </div>
             </div>
-            <div class="frame-10">
-              <div class="text-wrapper-3">Om</div>
-              <div class="group-6">
-                <div class="text-wrapper-4">Kontakt</div>
-                <div class="text-wrapper-5">Om os</div>
-                <div class="text-wrapper-6">Mission</div>
+            <div class="menu">
+              <div class="menu-title">Om</div>
+              <div class="menu-items-container">
+                <div class="menu-item">Kontakt</div>
+                <div class="menu-item">Om os</div>
+                <div class="menu-item">Mission</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="thanks-icons">
-          <p class="text-wrapper-7">Tak fordi du er sammen med os :)</p>
-          <div class="social-media">
-            <img class="img-2" src="img/facebook-icon.svg" />
-            <div class="img-2">
-              <div class="clip-path-group-wrapper">
-                <img class="clip-path-group" src="img/clip-path-group.png" />
-              </div>
+        <div class="footer-bottom">
+          <p>Tak fordi du er sammen med os :)</p>
+          <div class="social-media-container">
+            <div class="icon-container">
+              <img class="icon" src="/icons/Discord-icon.png" />
             </div>
-            <img class="img-2" src="img/instagram-icon.svg" />
-            <img class="img-2" src="img/tiktok-icon.svg" />
-            <img class="img-2" src="img/x-twitter-icon.svg" />
-            <div class="steam-icon"></div>
+            <div class="icon-container">
+              <img class="icon" src="/icons/Facebook-icon.png" />
+            </div>
+            <div class="icon-container">
+              <img class="icon" src="icons/Instagram-icon.png" />
+            </div>
+            <div class="icon-container">
+              <img class="icon" src="icons/Steam-icon.png" />
+            </div>
+            <div class="icon-container">
+              <img class="icon" src="icons/Tiktok-icon.png" />
+            </div>
+            <div class="icon-container">
+              <img class="icon" src="icons/X-twitter-icon.png" />
+            </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
   </body>
 </html>
