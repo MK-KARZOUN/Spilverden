@@ -5,38 +5,42 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+    <video
+      autoplay
+      loop
+      muted
+      class="video-container"
+      type="video/webm"
+      src="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm"
+    ></video>
+
     <div class="landing-page">
-      <div class="hero">
-        <div class="header">
-          <div class="top">
-            <div class="logo">
-              <img src="./images/Logo.png" alt="logo" />
-            </div>
-            <div>
-              <button onclick="window.location.href='./landing-page.html'">
-                Sign in
-              </button>
-            </div>
-          </div>
-          <div class="navbar">
-            <div class="nav-item">Turneringer</div>
-            <div class="nav-item">Nyhed</div>
-            <div class="nav-item">Forum</div>
-            <div class="nav-item">Find Makker</div>
-            <div class="nav-item">Venner</div>
-            <div class="nav-item">Om</div>
-          </div>
+
+      <header>
+        <div class="logo">
+          <img src="./images/Logo.png" alt="logo" />
         </div>
+  
+        <div class="action">
+          <button onclick="window.location.href='./landing-page.html'">
+            Sign in
+          </button>
+        </div>
+      </header>
 
-        <video
-          autoplay
-          loop
-          muted
-          class="video-container"
-          type="video/webm"
-          src="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm"
-        ></video>
+        
+    <div class="navbar">
+      <div class="nav-item">Turneringer</div>
+      <div class="nav-item">Nyhed</div>
+      <div class="nav-item">Forum</div>
+      <div class="nav-item">Find Makker</div>
+      <div class="nav-item">Venner</div>
+      <div class="nav-item">Om</div>
+    </div>
 
+  
+      <div class="hero">
         <div class="slogan">
           <p class="velkommen-til">
             Velkommen til SpilVerden:
