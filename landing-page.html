@@ -1,11 +1,251 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>SpilVerden - Dit Gamingfællesskab</title>
+    <link rel="stylesheet" href="landing-page.css" />
   </head>
   <body>
-    Hello
+    <!-- Video Background -->
+    <video
+      autoplay
+      loop
+      muted
+      class="video-bg"
+      src="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/homepage/dota_montage_webm.webm"
+    ></video>
+
+    <!-- Main Content -->
+    <div class="page-wrapper">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__top">
+          <img
+            class="header__logo"
+            src="./images/Logo.png"
+            alt="SpilVerden Logo"
+          />
+          <button
+            class="header__button"
+            onclick="window.location.href='./landing-page.html'"
+          >
+            Sign in
+          </button>
+        </div>
+      </header>
+
+      <!-- Navigation -->
+      <nav class="navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <span class="navbar__label">Turneringer</span>
+            <ul class="navbar__dropdown">
+              <li class="navbar__dropdown-item">Tilmeld</li>
+              <li class="navbar__dropdown-item">Tidligere Turneringer</li>
+              <li class="navbar__dropdown-item">Kalender</li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <span class="navbar__label">Nyhed</span>
+            <ul class="navbar__dropdown">
+              <li class="navbar__dropdown-item">Spil</li>
+              <li class="navbar__dropdown-item">International</li>
+              <li class="navbar__dropdown-item">Favorite Spil</li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <span class="navbar__label">Forum</span>
+            <ul class="navbar__dropdown">
+              <li class="navbar__dropdown-item">Opslage</li>
+              <li class="navbar__dropdown-item">Fælleskabe</li>
+              <li class="navbar__dropdown-item">Q,A</li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <span class="navbar__label">Find Makker</span>
+            <ul class="navbar__dropdown">
+              <li class="navbar__dropdown-item">Venneanmodning</li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <span class="navbar__label">Venner</span>
+            <ul class="navbar__dropdown">
+              <li class="navbar__dropdown-item">Venneliste</li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <span class="navbar__label">Om</span>
+            <ul class="navbar__dropdown">
+              <li class="navbar__dropdown-item">Kontakt</li>
+              <li class="navbar__dropdown-item">Om os</li>
+              <li class="navbar__dropdown-item">Mission</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            Velkommen til SpilVerden:<br />
+            Dit fællesskab for sjov og spil!
+          </h1>
+          <button class="hero__button">Learn more</button>
+        </div>
+      </section>
+
+      <!-- Content Section -->
+      <section class="content">
+        <div class="content__card">
+          <h2 class="content__title">
+            Velkommen til SpilVerden - Dit Gamingfællesskab
+          </h2>
+          <p class="content__text">
+            Spilverden er stedet for alle, der elsker gaming – uanset om du er
+            nybegynder eller erfaren spiller. Her kan du finde de nyeste
+            spilnyheder, deltage i spændende turneringer, diskutere dine
+            yndlingsspil i vores forum og finde nye venner at spille med.
+          </p>
+        </div>
+        <div class="content__card">
+          <h2 class="content__title">Hold dig opdateret</h2>
+          <p class="content__text">
+            Vil du altid være blandt de første til at høre om nye opdateringer,
+            spiludgivelser og e-sportsturneringer? Vores nyhedssektion dækker
+            alt det nyeste inden for gamingverdenen, så du aldrig går glip af
+            noget.
+          </p>
+        </div>
+        <div class="content__card">
+          <h2 class="content__title">Turneringer for alle niveauer</h2>
+          <p class="content__text">
+            Uanset om du spiller for sjov eller drømmer om at blive en
+            professionel e-sportsudøver, har vi turneringer, der passer til dig.
+            Deltag og konkurrér mod andre spillere i et sjovt og
+            fællesskabsorienteret miljø.
+          </p>
+        </div>
+        <div class="content__card">
+          <h2 class="content__title">Forum – Del din passion</h2>
+          <p class="content__text">
+            Vores forum er hjertet af fællesskabet, hvor du kan dele strategier,
+            finde holdkammerater eller bare snakke om de spil, du elsker.
+            <br />Det er det perfekte sted at møde ligesindede gamere.
+          </p>
+        </div>
+        <div class="content__card">
+          <h2 class="content__title">Find venner og modstandere</h2>
+          <p class="content__text">
+            Gaming er sjovere med venner! Brug vores platform til at finde nye
+            spillere at spille med eller imod.
+            <br />Uanset om du leder efter et fast team eller bare nogen til en
+            enkelt session, så er Spilverden stedet for dig.
+          </p>
+        </div>
+        <div class="content__card">
+          <h2 class="content__title">Bliv en del af fællesskabet</h2>
+          <p class="content__text">
+            Spilverden er mere end bare en hjemmeside – det er et samlingspunkt
+            for gamere. Opret en profil, deltag i debatter, og vær en del af et
+            voksende fællesskab. <br />Vi glæder os til at se dig i Spilverden!
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__top">
+          <img
+            class="footer__logo"
+            src="./images/Logo.png"
+            alt="SpilVerden Logo"
+          />
+          <div class="footer__menus">
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">Turneringer</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">Tilmeld</li>
+                <li class="footer__menu-item">Tidligere Turneringer</li>
+                <li class="footer__menu-item">Kalender</li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">Nyhed</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">Spil</li>
+                <li class="footer__menu-item">International</li>
+                <li class="footer__menu-item">Favoritspil</li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">Forum</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">Opslage</li>
+                <li class="footer__menu-item">Fællesskaber</li>
+                <li class="footer__menu-item">Q&A</li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">Find makker</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">Venneanmodning</li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">Venner</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">Venneliste</li>
+              </ul>
+            </div>
+            <div class="footer__menu">
+              <h3 class="footer__menu-title">Om</h3>
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">Kontakt</li>
+                <li class="footer__menu-item">Om os</li>
+                <li class="footer__menu-item">Mission</li>
+              </ul>
+            </div>
+            <!-- Repeat other menus similarly -->
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__text">Tak fordi du er sammen med os :)</p>
+          <div class="footer__socials">
+            <img
+              class="footer__social-icon"
+              src="/icons/Discord-icon.png"
+              alt="Discord"
+            />
+            <img
+              class="footer__social-icon"
+              src="/icons/Facebook-icon.png"
+              alt="Facebook"
+            />
+            <img
+              class="footer__social-icon"
+              src="icons/Instagram-icon.png"
+              alt="Instagram"
+            />
+            <img
+              class="footer__social-icon"
+              src="icons/Steam-icon.png"
+              alt="Steam"
+            />
+            <img
+              class="footer__social-icon"
+              src="icons/Tiktok-icon.png"
+              alt="Tiktok"
+            />
+            <img
+              class="footer__social-icon"
+              src="icons/X-twitter-icon.png"
+              alt="X-twitter"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
