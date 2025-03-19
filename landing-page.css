@@ -21,6 +21,8 @@
   --font-size-medium: 1.5rem; /* 24px */
   --font-size-large: 2rem; /* 32px */
   --font-size-extra-large: 3rem; /* 48px */
+
+  --animation-speed: 20s; /* Default speed */
 }
 
 * {
@@ -107,7 +109,7 @@ button:hover {
 }
 
 .header__logo {
-  width: 100px; /* Adjust as needed */
+  width: 70px; /* Adjust as needed */
 }
 
 .header__button {
@@ -162,7 +164,7 @@ button:hover {
 }
 
 .navbar__item:hover .navbar__label {
-  color: black;
+  color: var(--color-accent);
 }
 
 .navbar__item::after {
@@ -301,12 +303,56 @@ button:hover {
   height: 100%;
 }
 
+/* ===== Slider Section ===== */
+
+.slider__container {
+  background-color: white;
+  padding: 150px 150px 150px 0;
+  overflow: hidden;
+}
+
+.slider {
+  background-color: #050b23;
+  display: flex;
+  align-items: center;
+  width: max-content;
+  padding: 48px 0;
+  animation: slide var(--animation-speed) linear infinite;
+}
+
+.slide {
+  width: 200px;
+  height: 300px;
+  margin-right: 24px;
+  flex-shrink: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  box-shadow: -10px 5px 10px rgb(36, 36, 36);
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.slider:hover {
+  animation-play-state: paused;
+}
+
 /* ===== Content Section ===== */
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 48px;
-  padding: 150px;
+  padding: 0px 150px 150px 150px;
   background-color: white;
 }
 
